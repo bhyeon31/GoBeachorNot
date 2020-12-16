@@ -9,10 +9,10 @@ import datetime
 
 
 url1 = 'http://apis.data.go.kr/1192000/service/OceansBeachSeawaterService1/getOceansBeachSeawaterInfo1'
-key1 = 'JczkNAYUK0nuC7gzVNgSj2%2FUHiwakF7h%2BMI7BkHeAuKc7ctuY961tl%2F%2B%2Fo2hCS2TjorkkeQ2IEek%2BGPFiC0Xdg%3D%3D'
+key1 = '####################'
 url2 = 'https://seantour.com/seantour_map/travel/getBeachCongestionApi.do'
 url3 = 'http://apis.data.go.kr/1192000/service/OceansBeachInfoService1/getOceansBeachInfo1'
-key2 = 'JczkNAYUK0nuC7gzVNgSj2%2FUHiwakF7h%2BMI7BkHeAuKc7ctuY961tl%2F%2B%2Fo2hCS2TjorkkeQ2IEek%2BGPFiC0Xdg%3D%3D'
+key2 = '####################'
 
 sido_map = {'부산광역시':'부산','인천광역시':'인천','울산광역시':'울산','강원도':'강원','충청남도':'충남'
                ,'전라북도':'전북','전라남도':'전남','경상북도':'경북','경상남도':'경남','제주특별자치도':'제주'}
