@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <title>회원가입</title>
+        <style>
+            fieldset {
+                position:absolute;
+                width:250px;
+                height:220px;
+                top:50%;
+                left:50%;
+                margin-top:-125px;
+                margin-left:-110px;
+            }
+            #message {
+                position:absolute;
+                top:66%;
+                left:40%;
+                color:red;
+            }
+            a {
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        {% include 'nav.html' %}
+
+        <fieldset>
+            <legend>SIGN UP</legend>
+                <form method='post' action="{{ url_for('signup') }}">
+                    <p>&ensp;&ensp;ID : <input name='id' type='text' autocomplete='off'> </p>
+                    <p>&ensp;PW : <input name='pw' type='password' autocomplete="off"> </p>
+                    <p>이름 : <input name='name' type='text' autocomplete="off"> </p>
+                    <p>번호 : <input name='hp' type='text' autocomplete="off"> </p>
+                    <div align="center">
+                    <input type='submit' value='가입'>
+                    </div>
+                </form>
+        </fieldset>
+        {% if message is defined %}
+        <script type="text/javascript">
+         alert("{{ message }}");
+        </script>
+        {% endif %}
+    </body>
+</html>
